@@ -1,12 +1,30 @@
-# React + Vite
+# La Vibra
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Benvingut/da a **La Vibra**, el meu primer projecte web penjat a GitHub i desplegat amb Vercel! Aquesta web és un espai on estic aprenent i experimentant amb desenvolupament web.
 
-Currently, two official plugins are available:
+🔗 **Web online:** [lavibra.vercel.app](https://lavibra.vercel.app/)
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+---
 
-## Expanding the ESLint configuration
+## 🛠️ Tecnologies utilitzades
 
-If you are developing a production application, we recommend using TypeScript and enable type-aware lint rules. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+- HTML5
+- CSS3
+- Javascript
+- React
+- Vite
+
+---
+
+## ▶️ Com executar-ho localment
+
+```bash
+# Clonar aquest repositori
+git clone https://github.com/AprenentEMB/la-meva-web.git
+
+# Entrar al directori
+cd la-meva-web
+
+# Obrir el fitxer index.html al navegador
+
+
