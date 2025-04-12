@@ -1,0 +1,494 @@
+
+
+
+* {
+  margin: 0;
+  padding: 0;
+  justify-content: center;
+  
+  
+  
+}
+
+
+body {
+  
+ 
+  
+  line-height: 1.6;
+  font-family: "Helvetica", sans-serif;
+  
+}
+
+
+
+
+header {
+ 
+  
+  padding: 20px 0;
+  text-align: center;
+  max-height:735px;
+  width: 100%;
+  
+  
+  
+}
+
+
+header h1 {
+  font-size: 7.5rem;
+  letter-spacing: 60px;
+  margin-top: 10%;
+  margin-bottom: 8%;
+  color: #FFFFFF; /* Color de les lletres */
+  text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.5), 0 0 25px rgba(0, 0, 0, 0.3);
+  text-decoration: underline 1px;
+  text-underline-offset: -180%;
+ transition: transform 0.2s ease;
+}
+
+
+
+
+h1:hover {
+  animation: vibrar 0.25s linear infinite;
+}
+
+@keyframes vibrar {
+  0% { transform: translateX(0); }
+  25% { transform: translateX(-5px); }
+  50% { transform: translateX(5px); }
+  75% { transform: translateX(-5px); }
+  100% { transform: translateX(5px); }
+}
+
+
+
+header h2 {
+  font-size: 2.5rem;
+  letter-spacing: 80px;
+  margin-top: 15%;
+  text-decoration: underline 0.7px;
+  text-underline-offset: -10px;
+ 
+  color: rgb(254, 252, 240); /* Color de les lletres */
+  text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.5), 0 0 25px rgba(0, 0, 0, 0.3);
+  
+ 
+}
+
+
+
+
+
+header nav ul {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  padding-top: 30px;
+    
+}
+
+
+
+#llista{
+  gap: 60px;
+  color: #FFFFFF; /* Color de les lletres */
+  text-shadow: 4px 4px 10px rgba(0, 0, 0, 0.6); /* Ombra subtil al voltant del text */
+  display:flex;
+  gap: 200px;
+  margin-top: 40px;
+}
+
+header nav ul li {
+  gap: 80px;
+  margin: 0 15px;
+ 
+}
+
+header nav ul li button {
+  background-color: white;
+  font-size: 1rem;
+  text-transform: uppercase;
+  font-weight: bold;
+  transition: color 0.3s ease;
+  opacity: 0.8;
+  z-index: 1;
+  position: relative;
+  width: 110px;
+  height: 50px;
+  
+  border-radius: 10%;
+  
+}
+
+
+
+header nav ul li button:hover {
+  background-color: rgb(185, 190, 248);
+  opacity: 1; /* Color d'accentuació */
+}
+
+
+
+
+.about {
+  background: linear-gradient(rgb(30, 30, 30),rgb(62, 1, 168),rgb(30, 30, 30));
+  padding: 60px 20px;
+  text-align: center;
+  
+  
+}
+
+.about h2 {
+  font-size: 2.5rem;
+  margin-bottom: 50px;
+  color: #fafbfb;
+  letter-spacing: 15px;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5), 0 0 25px rgba(0, 0, 0, 0.3);
+  
+}
+
+.about p {
+  
+  font-size: 1.2rem;
+  max-width: 900px;
+ text-align: center;
+ margin: 0 auto;
+  color:white;
+  line-height: 2.2;
+  margin-bottom: 60px;
+ 
+  text-shadow: 1px 1px 0.2px rgba(0, 0, 0, 0.5);
+ }
+
+/* Secció "Serveis" */
+.services {
+  background-color: rgb(170, 164, 123);
+  padding: 60px 20px;
+  text-align: center;
+ 
+}
+
+.services h2 {
+  color: #FFFFFF;
+  font-size: 2.5rem;
+  margin-bottom:40px;
+  margin-top: 40px;
+  font-weight: bold;
+  z-index: 1;
+  text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.5), 0 0 25px rgba(0, 0, 0, 0.3);
+  letter-spacing: 15px;
+}
+
+.services ul {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 80px;
+  margin-bottom: 110px;
+}
+
+.services ul li {
+  background-color: rgba(255, 255, 255, 0.8);
+  padding: 20px;
+  margin: 10px;
+  width: 370px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  text-align: left;
+  font-size: 1.1rem;
+  position: relative;
+  overflow: hidden;
+  color: black;
+ 
+  
+  
+  max-height: 30px; 
+  transition: transform 0.9s ease, box-shadow 0.3s ease, max-height 1s ease,background-color 0.5s ease;
+}
+
+.services ul li:hover {
+  transform: translateY(-10px);
+  background-color: rgba(0, 0, 0,0.7);
+  max-height: 300px;
+  opacity: 1;
+  color: white;
+  
+}
+
+.titoll{
+  display: flex;
+}
+
+.flecha{
+  text-align: right;
+  margin-left: 10px;
+}
+
+.service {
+  
+  opacity: 0;
+  transition: transform 0.9s ease, opacity 0.5s ease;
+}
+
+.service.active{
+  opacity: 1;
+}
+/* Secció "Els Meus Treballs" */
+
+#works {
+  background: linear-gradient(rgb(30, 30, 30),rgb(62, 1, 168),rgb(30, 30, 30));
+ 
+  padding: 40px 20px;
+  text-align: center;
+  
+
+}
+
+.titleworks {
+  font-size:2.5rem;
+  font-weight: bold;
+  color: #fdffff;
+  margin-top: 40px;
+  margin-bottom: 80px;
+  letter-spacing: 15px;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5), 0 0 25px rgba(0, 0, 0, 0.3);
+}
+
+.container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); /* Cuadricula flexible */
+  gap: 30px;
+  justify-items: center;
+}
+
+.container div {
+  display:flex;
+  background-color: rgba(255, 255, 255, 0.5);
+  border-radius: 8px;
+  padding: 20px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  width: 100%;
+  max-width: 300px;
+  text-align: center;
+  transition: transform 0.3s ease, box-shadow 0.3s ease,background-color 0.5s ease;
+}
+
+.container div:hover {
+  transform: translateY(-10px);
+  background-color: rgba(255, 255, 255, 0.9);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.play-btn {
+  font-size: 2rem;
+  background-color: black;
+  border: none;
+  color: white;
+  border-radius: 10%;
+  padding: 10px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  margin-right: 15px;
+}
+
+.play-btn:hover {
+  background-color: #8ff2ff;
+}
+
+.title {
+  display: block;
+  font-size: 1.2rem;
+  font-weight: bold;
+  color: #444;
+  margin: 10px 10px;
+}
+
+.category {
+  display: block;
+  font-size: 1rem;
+  color: #777;
+}
+
+audio {
+  display: none; 
+}
+
+
+
+
+/* Secció "Contacte" */
+.contact {
+  background-color: rgb(30, 30, 30);
+  color: #fff;
+  padding: 60px 20px;
+  text-align: center;
+  
+}
+
+.contact h2 {
+  font-size: 2rem;
+  margin-bottom: 30px;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+form label {
+  font-size: 1rem;
+  margin-bottom: 5px;
+  text-align: left;
+}
+
+form input, form textarea {
+  padding: 15px;
+  margin-bottom: 15px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 1rem;
+  color: #333;
+  transition: border-color 0.3s ease;
+}
+
+form input:focus, form textarea:focus {
+  border-color: #00bcd4;
+  outline: none;
+}
+
+form button {
+  padding: 15px;
+  background-color: #333;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+form button:hover {
+  background-color: #555;
+}
+
+form button:active {
+  background-color: #222;
+}
+
+/* Estils per a mòbils */
+/* Estils per a mòbils */
+@media (max-width: 768px) {
+  /* Header */
+  header h1 {
+    font-size: 3rem;
+    letter-spacing: 10px;
+    margin-top: 20%;
+  }
+
+  header h2 {
+    font-size: 1.5rem;
+    letter-spacing: 20px;
+    margin-top: 10%;
+  }
+
+  #llista {
+    display:grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 5px;
+    margin-top: 20px;
+  }
+
+  header nav ul li button {
+    width: 100px;
+    height: 40px;
+    font-size: 0.8rem;
+  }
+
+  /* About Section */
+  .about h2 {
+    font-size: 2rem;
+  }
+
+  .about p {
+    font-size: 1rem;
+    line-height: 1.8;
+  }
+
+  /* Services Section */
+  .services ul {
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .services ul li {
+    width: 90%;
+    margin: 0 auto;
+  }
+
+  /* Works Section */
+  .container {
+    grid-template-columns: 1fr;
+    gap: 20px;
+  }
+
+  .container div {
+    max-width: 80%;
+  }
+  
+  .play-btn {
+    font-size: 1.5rem;
+    padding: 10px;
+  }
+#anunci{
+  margin-right: 65px;
+}
+  
+  /* Contact Section */
+  .contact h2 {
+    font-size: 1.5rem;
+  }
+
+  form {
+    width: 90%;
+    margin: 0 auto;
+  }
+
+  form input, form textarea {
+    font-size: 0.9rem;
+  }
+
+  form button {
+    font-size: 0.9rem;
+    padding: 10px;
+  }
+}
+
+/* Estils per a pantalles grans */
+
+@media (min-width: 1920px) {
+  header h1 {
+    font-size: 10rem;
+    letter-spacing: 100px;
+    margin-top: 5%;
+  }
+
+  header h2 {
+    font-size: 3rem;
+    letter-spacing: 100px;
+    margin-top: 5%;
+  }
+
+  #llista {
+    display:grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 5px;
+    margin-top: 20px;
+  }
+
+}
