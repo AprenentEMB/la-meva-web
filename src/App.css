@@ -1,69 +1,76 @@
-
-
-
 * {
   margin: 0;
   padding: 0;
   justify-content: center;
   
-  
-  
 }
-
 
 body {
-  
- 
-  
   line-height: 1.6;
-  font-family: "Helvetica", sans-serif;
+  font-family: 'roboto', sans-serif;
   
 }
-
-
-
 
 header {
- 
-  
   padding: 20px 0;
   text-align: center;
-  max-height:735px;
+  max-height: 785px;
   width: 100%;
-  
-  
+  position: relative;
+  height: 100vh;
+  background-image: linear-gradient(
+      to bottom,
+      rgba(30, 30, 30, 0) 15.5%,
+      rgb(255, 255, 255) 16%,
+      rgba(30, 30, 30, 0.6) 16.5%,
+      rgba(30, 30, 60,0.7) 70%,
+      rgba(30, 30, 30) 93%
+    ),
+    url('/13.jpg'); /* Asegúrate de que la ruta de la imagen sea correcta */
+  background-color: rgba(30, 30, 30, 0.5);
+ background-size:cover;
+  background-position: center center;
+ 
+
+   
   
 }
-
 
 header h1 {
-  font-size: 7.5rem;
+  font-size: 6.5rem;
   letter-spacing: 60px;
-  margin-top: 10%;
-  margin-bottom: 8%;
-  color: #FFFFFF; /* Color de les lletres */
-  text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.5), 0 0 25px rgba(0, 0, 0, 0.3);
+  margin-top: 15%;
+  margin-bottom: 3%;
+  color: #ffffff; /* Color de les lletres */
+  text-shadow:
+    2px 2px 8px rgba(0, 0, 0, 0.5),
+    0 0 25px rgba(0, 0, 0, 0.3);
   text-decoration: underline 1px;
   text-underline-offset: -180%;
- transition: transform 0.2s ease;
+  transition: transform 0.2s ease;
 }
-
-
-
 
 h1:hover {
   animation: vibrar 0.25s linear infinite;
 }
 
 @keyframes vibrar {
-  0% { transform: translateX(0); }
-  25% { transform: translateX(-5px); }
-  50% { transform: translateX(5px); }
-  75% { transform: translateX(-5px); }
-  100% { transform: translateX(5px); }
+  0% {
+    transform: translateX(0);
+  }
+  25% {
+    transform: translateX(-5px);
+  }
+  50% {
+    transform: translateX(5px);
+  }
+  75% {
+    transform: translateX(-5px);
+  }
+  100% {
+    transform: translateX(5px);
+  }
 }
-
-
 
 header h2 {
   font-size: 2.5rem;
@@ -71,40 +78,33 @@ header h2 {
   margin-top: 15%;
   text-decoration: underline 0.7px;
   text-underline-offset: -10px;
- 
-  color: rgb(254, 252, 240); /* Color de les lletres */
-  text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.5), 0 0 25px rgba(0, 0, 0, 0.3);
   
- 
+
+  color: rgb(254, 252, 240); /* Color de les lletres */
+  text-shadow:
+    2px 2px 8px rgba(0, 0, 0, 0.5),
+    0 0 25px rgba(0, 0, 0, 0.3);
 }
-
-
-
-
 
 header nav ul {
   list-style: none;
   display: flex;
   justify-content: center;
-  padding-top: 30px;
-    
+  padding-top: 10px;
 }
 
-
-
-#llista{
+#llista {
   gap: 60px;
-  color: #FFFFFF; /* Color de les lletres */
+  color: #ffffff; /* Color de les lletres */
   text-shadow: 4px 4px 10px rgba(0, 0, 0, 0.6); /* Ombra subtil al voltant del text */
-  display:flex;
+  display: flex;
   gap: 200px;
-  margin-top: 40px;
+  margin-top: 20px;
 }
 
 header nav ul li {
   gap: 80px;
   margin: 0 15px;
- 
 }
 
 header nav ul li button {
@@ -118,67 +118,81 @@ header nav ul li button {
   position: relative;
   width: 110px;
   height: 50px;
-  
+
   border-radius: 10%;
-  
 }
-
-
 
 header nav ul li button:hover {
   background-color: rgb(185, 190, 248);
   opacity: 1; /* Color d'accentuació */
 }
 
-
-
-
 .about {
-  background: linear-gradient(rgb(30, 30, 30),rgb(62, 1, 168),rgb(30, 30, 30));
-  padding: 60px 20px;
+  background-image: linear-gradient(
+      to bottom,
+      
+     
+      rgba(30, 30, 30) 16.5%,
+      rgba(30, 30, 60,0.7) 70%,
+      rgba(35, 35, 84, 0.6) 80%
+    ),
+    url('/13.jpg');
+  color: white;
   text-align: center;
-  
-  
+  padding: 50px 20px;
 }
 
 .about h2 {
-  font-size: 2.5rem;
+  font-size: 2.8rem;
   margin-bottom: 50px;
+  
   color: #fafbfb;
   letter-spacing: 15px;
-  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5), 0 0 25px rgba(0, 0, 0, 0.3);
-  
+  text-shadow:
+    2px 2px 4px rgba(0, 0, 0, 0.5),
+    0 0 25px rgba(0, 0, 0, 0.3);
 }
 
 .about p {
-  
   font-size: 1.2rem;
   max-width: 900px;
- text-align: center;
- margin: 0 auto;
-  color:white;
+  text-align: center;
+  margin: 0 auto;
+  color: white;
   line-height: 2.2;
-  margin-bottom: 60px;
- 
+  
   text-shadow: 1px 1px 0.2px rgba(0, 0, 0, 0.5);
- }
+}
 
 /* Secció "Serveis" */
 .services {
-  background-color: rgb(170, 164, 123);
-  padding: 60px 20px;
+  background-image: linear-gradient(
+    to top,
+    rgba(0, 0, 0, 0) 44%,
+    rgb(0, 0, 0) 99%,
+  
+    rgb(154, 154, 154) 99.5%,
+    rgb(255, 255, 255) 100%
+  ),
+  url('/background5.jpg');
+background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  color: white;
   text-align: center;
- 
+  padding: 50px 20px;
 }
 
 .services h2 {
-  color: #FFFFFF;
-  font-size: 2.5rem;
-  margin-bottom:40px;
-  margin-top: 40px;
+  color: #ffffff;
+  font-size: 2.8rem;
+  margin-bottom: 40px;
+  margin-top: 30px;
   font-weight: bold;
   z-index: 1;
-  text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.5), 0 0 25px rgba(0, 0, 0, 0.3);
+  text-shadow:
+    2px 2px 8px rgba(0, 0, 0, 0.5),
+    0 0 25px rgba(0, 0, 0, 0.3);
   letter-spacing: 15px;
 }
 
@@ -188,11 +202,11 @@ header nav ul li button:hover {
   justify-content: center;
   flex-wrap: wrap;
   gap: 80px;
-  margin-bottom: 110px;
+  margin-bottom: 50px;
 }
 
 .services ul li {
-  background-color: rgba(255, 255, 255, 0.8);
+  background-color: rgba(255, 255, 255, 0.95);
   padding: 20px;
   margin: 10px;
   width: 370px;
@@ -203,59 +217,75 @@ header nav ul li button:hover {
   position: relative;
   overflow: hidden;
   color: black;
- 
-  
-  
-  max-height: 30px; 
-  transition: transform 0.9s ease, box-shadow 0.3s ease, max-height 1s ease,background-color 0.5s ease;
+
+  max-height: 15px;
+  transition:
+    transform 0.9s ease,
+    box-shadow 0.3s ease,
+    max-height 1s ease,
+    background-color 0.5s ease;
 }
 
 .services ul li:hover {
   transform: translateY(-10px);
-  background-color: rgba(0, 0, 0,0.7);
+  background-color: rgba(0, 0, 0, 0.7);
   max-height: 300px;
   opacity: 1;
   color: white;
-  
 }
 
-.titoll{
+.titoll {
   display: flex;
 }
 
-.flecha{
+.flecha {
   text-align: right;
   margin-left: 10px;
 }
 
 .service {
-  
   opacity: 0;
-  transition: transform 0.9s ease, opacity 0.5s ease;
+  transition:
+    transform 0.9s ease,
+    opacity 0.5s ease;
 }
 
-.service.active{
+.service.active {
   opacity: 1;
 }
 /* Secció "Els Meus Treballs" */
 
 #works {
-  background: linear-gradient(rgb(30, 30, 30),rgb(62, 1, 168),rgb(30, 30, 30));
- 
-  padding: 40px 20px;
+  background-image: linear-gradient(
+      to bottom,
+      
+      rgb(0, 0, 0) 0%, /* Negro en la parte superior */
+      rgba(0, 0, 0, 0.8) 20%, /* Transición hacia la imagen */
+      rgba(7, 8, 96, 0.6) 50%, /* Mezcla con la imagen en el centro */
+      rgba(0, 0, 0, 0.8) 80%, /* Transición hacia negro */
+      rgb(0, 0, 0) 100%
+     
+     
+    ),
+    url('/12.jpg');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  color: white;
   text-align: center;
-  
-
+  padding: 50px 20px;
 }
 
 .titleworks {
-  font-size:2.5rem;
+  font-size: 2.8rem;
   font-weight: bold;
-  color: #fdffff;
-  margin-top: 40px;
-  margin-bottom: 80px;
+  color: #ffffffe5;
+  margin-top: 20px;
+  margin-bottom: 60px;
   letter-spacing: 15px;
-  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5), 0 0 25px rgba(0, 0, 0, 0.3);
+  text-shadow:
+    2px 2px 4px rgba(0, 0, 0, 0.5),
+    0 0 25px rgba(0, 0, 0, 0.3);
 }
 
 .container {
@@ -263,10 +293,15 @@ header nav ul li button:hover {
   grid-template-columns: repeat(3, 1fr); /* Cuadricula flexible */
   gap: 30px;
   justify-items: center;
+  margin-bottom: 50px;
+  padding: 10px;
 }
 
 .container div {
-  display:flex;
+  display: flex;
+   /* Col·loca els elements en una columna */
+  align-items: center; /* Centra els elements horitzontalment */
+  justify-content: space-between; /* Espai entre els elements */
   background-color: rgba(255, 255, 255, 0.5);
   border-radius: 8px;
   padding: 20px;
@@ -274,7 +309,8 @@ header nav ul li button:hover {
   width: 100%;
   max-width: 300px;
   text-align: center;
-  transition: transform 0.3s ease, box-shadow 0.3s ease,background-color 0.5s ease;
+  transition: transform 0.3s ease, box-shadow 0.3s ease, background-color 0.5s ease;
+  height: 100px; /* Assegura una alçada consistent */
 }
 
 .container div:hover {
@@ -292,7 +328,10 @@ header nav ul li button:hover {
   padding: 10px;
   cursor: pointer;
   transition: background-color 0.3s ease;
-  margin-right: 15px;
+  margin-right: 0px;
+  margin-top: 10px;
+  
+ 
 }
 
 .play-btn:hover {
@@ -301,10 +340,11 @@ header nav ul li button:hover {
 
 .title {
   display: block;
-  font-size: 1.2rem;
+  font-size: 1.3rem;
   font-weight: bold;
-  color: #444;
-  margin: 10px 10px;
+  color: #000000b9;
+  margin: 0px 0px;
+  text-align: center;
 }
 
 .category {
@@ -314,24 +354,37 @@ header nav ul li button:hover {
 }
 
 audio {
-  display: none; 
+  display: none;
 }
-
-
-
 
 /* Secció "Contacte" */
 .contact {
-  background-color: rgb(30, 30, 30);
-  color: #fff;
-  padding: 60px 20px;
-  text-align: center;
+  background: linear-gradient(
+    180deg,
   
+
+    rgba(0, 0, 0) 1%,
+    rgba(0, 0, 0, 0.8) 10%,
+    rgba(0, 0, 0, 0.7) 20%,
+    rgba(0, 0, 0, 0.65) 30%,
+    rgba(0, 0, 0, 0.2) 40%,
+    rgba(0, 0, 0, 0.4) 60%,
+    rgba(0, 0, 0, 0.7) 80%,
+    rgba(0, 0, 0) 100%
+    
+  ), url('/9.jpg');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  color: rgb(255, 255, 255);
+  text-align: center;
+  padding: 60px 20px;
 }
 
 .contact h2 {
-  font-size: 2rem;
+  font-size: 2.2rem;
   margin-bottom: 30px;
+  margin-top: 30px;
 }
 
 form {
@@ -347,7 +400,8 @@ form label {
   text-align: left;
 }
 
-form input, form textarea {
+form input,
+form textarea {
   padding: 15px;
   margin-bottom: 15px;
   border: 1px solid #ccc;
@@ -357,7 +411,8 @@ form input, form textarea {
   transition: border-color 0.3s ease;
 }
 
-form input:focus, form textarea:focus {
+form input:focus,
+form textarea:focus {
   border-color: #00bcd4;
   outline: none;
 }
@@ -398,7 +453,7 @@ form button:active {
   }
 
   #llista {
-    display:grid;
+    display: grid;
     grid-template-columns: repeat(2, 1fr);
     gap: 5px;
     margin-top: 20px;
@@ -440,15 +495,15 @@ form button:active {
   .container div {
     max-width: 80%;
   }
-  
+
   .play-btn {
     font-size: 1.5rem;
     padding: 10px;
   }
-#anunci{
-  margin-right: 65px;
-}
-  
+  #anunci {
+    margin-right: 65px;
+  }
+
   /* Contact Section */
   .contact h2 {
     font-size: 1.5rem;
@@ -459,7 +514,8 @@ form button:active {
     margin: 0 auto;
   }
 
-  form input, form textarea {
+  form input,
+  form textarea {
     font-size: 0.9rem;
   }
 
@@ -485,10 +541,9 @@ form button:active {
   }
 
   #llista {
-    display:grid;
+    display: grid;
     grid-template-columns: repeat(4, 1fr);
     gap: 5px;
     margin-top: 20px;
   }
-
 }
