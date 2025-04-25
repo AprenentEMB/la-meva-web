@@ -130,7 +130,7 @@ const Services = () => {
           onMouseEnter={() => handleMouseEnter(0)}
           onMouseLeave={handleMouseLeave}
         >
-          <div className="titoll"><span>RESTAURACIÓ I NETEJA D`&#39;`AUDIO</span>
+          <div className="titoll"><span>RESTAURACIÓ I NETEJA D&#39;AUDIO</span>
            <FontAwesomeIcon
               icon={faChevronDown}
               className={`flecha ${activeItem === 0 ? 'active' : ''}`}
