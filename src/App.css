@@ -437,9 +437,19 @@ form button:active {
 }
 
 /* Estils per a mòbils */
-/* Estils per a mòbils */
 @media (max-width: 768px) {
   /* Header */
+header {
+  background-image: linear-gradient(
+      to bottom,
+      rgba(30, 30, 30, 0) 22.5%,
+      rgb(255, 255, 255) 23%,
+      rgba(30, 30, 30, 0.6) 16.5%,
+      rgba(30, 30, 60,0.7) 70%,
+      rgba(30, 30, 30) 93%
+    ),
+    url('/13.jpg');
+  }
   header h1 {
     font-size: 3rem;
     letter-spacing: 10px;
@@ -455,7 +465,7 @@ form button:active {
   #llista {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    gap: 5px;
+    gap: 10px;
     margin-top: 20px;
   }
 
@@ -473,6 +483,7 @@ form button:active {
   .about p {
     font-size: 1rem;
     line-height: 1.8;
+    padding: 0 10px;
   }
 
   /* Services Section */
@@ -493,15 +504,17 @@ form button:active {
   }
 
   .container div {
-    max-width: 80%;
+    max-width: 90%;
   }
 
   .play-btn {
     font-size: 1.5rem;
     padding: 10px;
   }
-  #anunci {
-    margin-right: 65px;
+
+  .titleworks {
+    font-size: 2rem;
+    margin-bottom: 30px;
   }
 
   /* Contact Section */
@@ -524,10 +537,10 @@ form button:active {
     padding: 10px;
   }
 }
-
 /* Estils per a pantalles grans */
 
 @media (min-width: 1920px) {
+  /* Header */
   header h1 {
     font-size: 10rem;
     letter-spacing: 100px;
@@ -543,7 +556,75 @@ form button:active {
   #llista {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
-    gap: 5px;
+    gap: 20px;
     margin-top: 20px;
+  }
+
+  header nav ul li button {
+    width: 150px;
+    height: 60px;
+    font-size: 1.2rem;
+  }
+
+  /* About Section */
+  .about h2 {
+    font-size: 3.5rem;
+    margin-bottom: 60px;
+  }
+
+  .about p {
+    font-size: 1.5rem;
+    line-height: 2.5;
+    max-width: 1200px;
+  }
+
+  /* Services Section */
+  .services ul {
+    gap: 100px;
+  }
+
+  .services ul li {
+    width: 400px;
+    padding: 30px;
+  }
+
+  /* Works Section */
+  .container {
+    grid-template-columns: repeat(4, 1fr);
+    gap: 40px;
+  }
+
+  .container div {
+    max-width: 350px;
+  }
+
+  .play-btn {
+    font-size: 2.5rem;
+    padding: 15px;
+  }
+
+  .titleworks {
+    font-size: 3.5rem;
+    margin-bottom: 80px;
+  }
+
+  /* Contact Section */
+  .contact h2 {
+    font-size: 2.5rem;
+  }
+
+  form {
+    max-width: 800px;
+  }
+
+  form input,
+  form textarea {
+    font-size: 1.2rem;
+    padding: 20px;
+  }
+
+  form button {
+    font-size: 1.2rem;
+    padding: 20px;
   }
 }
